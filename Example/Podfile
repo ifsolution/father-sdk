@@ -1,0 +1,15 @@
+source "git@github.com:ifsolution/father-specs.git"
+source "https://cdn.cocoapods.org/"
+
+use_frameworks!
+
+platform :ios, "10.0"
+
+target "DadSDK_Example" do
+  pod "DadSDK", :path => "../"
+  pod "DadSDK/Auth", :path => "../"
+
+  target "DadSDK_Tests" do
+    inherit! :search_paths
+  end
+end

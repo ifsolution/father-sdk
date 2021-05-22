@@ -1,0 +1,6 @@
+framework module DadSDK {
+  umbrella header "DadSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
