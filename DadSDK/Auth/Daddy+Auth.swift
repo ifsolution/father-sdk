@@ -27,8 +27,9 @@ struct SomeModuleLoader: ModuleLoader {
 
     func load(in container: ModuleContainer) {
         container.registerBoard({ (identifier) -> ActivatableBoard in
-            print("\(identifier)")
-            fatalError()
+            NoBoard(identifier: identifier) { _ in
+                print("Activate Board => \(identifier)")
+            }
         }, with: id)
     }
 }
@@ -51,7 +52,9 @@ struct AuthPlugin: ModulePlugin {
         }
 
         func apply(for main: MainComponent) {
-            let module = SomeModuleLoader(id: "some", exProducer: ExProducer(producer: main.producer)) {}
+            let module = SomeModuleLoader(id: "some", exProducer: ExProducer(producer: main.producer)) {
+                print("An external factory come here")
+            }
             main.append(module: module)
         }
     }

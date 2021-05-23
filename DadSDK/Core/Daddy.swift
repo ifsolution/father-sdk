@@ -11,6 +11,8 @@ import Foundation
 
 public struct Options {
     public init() {}
+
+    public static let `default` = Options()
 }
 
 public final class DaddyComponent {
@@ -32,7 +34,11 @@ public final class DaddyComponent {
     }
 
     public func initialize() {
+        // Load plutins
         plugins.forEach { $0.apply(for: self) }
+        
+        // Init shared Daddy
+        Daddy.sharedInstance = Daddy()
     }
 }
 
@@ -55,7 +61,7 @@ extension DaddyComponent: MainComponent {
 public final class Daddy {
     static var sharedInstance: Daddy?
 
-    private init() {}
+    fileprivate init() {}
 
     public static var shared: Daddy {
         guard let instance = sharedInstance else {
@@ -64,7 +70,7 @@ public final class Daddy {
         return instance
     }
 
-    public static func with(options: Options = Options()) -> DaddyComponent {
+    public static func with(options: Options) -> DaddyComponent {
         DaddyComponent(options: options)
     }
 }
