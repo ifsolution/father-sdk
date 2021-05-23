@@ -19,50 +19,52 @@ protocol SomeExProducer {
 }
 
 struct SomeModuleLoader: ModuleLoader {
-    var identifier: String { id.rawValue }
-
-    let id: BoardID
+    var identifier: BoardID
     var exProducer: SomeExProducer
     var exDepsFac: () -> Any
 
     func load(in container: ModuleContainer) {
-        container.registerBoard({ (identifier) -> ActivatableBoard in
+        container.registerBoard(identifier) { identifier in
             NoBoard(identifier: identifier) { _ in
                 print("Activate Board => \(identifier)")
             }
-        }, with: id)
+        }
     }
 }
 
-struct AuthPlugin: ModulePlugin {
-    func apply(for main: MainComponent) {
+public struct AuthPlugin: ModulePlugin {
+    public let identifier: BoardID
+
+    let some1: BoardID
+    let some2: BoardID
+
+    public init(identifier: BoardID, some1Destination: BoardID, some2Destination: BoardID) {
+        self.identifier = identifier
+        some1 = some1Destination
+        some2 = some2Destination
+    }
+
+    public func apply(for main: MainComponent) {
         struct ExProducer: SomeExProducer {
             let producer: ActivableBoardProducer
+            let some1: BoardID
+            let some2: BoardID
 
             func produce(identifier: SomeID) -> ActivatableBoard {
                 var result: ActivatableBoard?
                 switch identifier {
                 case .some1:
-                    result = producer.produceBoard(identifier: "pub-some-1")
+                    result = producer.produceBoard(identifier: some1)
                 case .some2:
-                    result = producer.produceBoard(identifier: "pub-some-2")
+                    result = producer.produceBoard(identifier: some2)
                 }
                 return result ?? NoBoard()
             }
         }
 
-        func apply(for main: MainComponent) {
-            let module = SomeModuleLoader(id: "some", exProducer: ExProducer(producer: main.producer)) {
-                print("An external factory come here")
-            }
-            main.append(module: module)
+        let module = SomeModuleLoader(identifier: identifier, exProducer: ExProducer(producer: main.producer, some1: some1, some2: some2)) {
+            print("An external factory come here")
         }
-    }
-}
-
-extension DaddyComponent {
-    public func enableAuth() -> Self {
-        append(plugin: AuthPlugin())
-        return self
+        main.append(module: module)
     }
 }

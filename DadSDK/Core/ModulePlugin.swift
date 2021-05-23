@@ -9,13 +9,15 @@ import Boardy
 import DadFoundation
 import Foundation
 
-protocol MainComponent: ModuleContainer {
+public protocol MainComponent: ModuleContainer {
     /// Main producer
     var producer: ActivableBoardProducer { get }
 
     func append(module: ModuleLoader)
 }
 
-protocol ModulePlugin {
+public protocol ModulePlugin {
+    var identifier: BoardID { get }
+
     func apply(for main: MainComponent)
 }

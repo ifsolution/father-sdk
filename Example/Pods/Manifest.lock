@@ -10,14 +10,14 @@ PODS:
   - Boardy/Default (1.14.1):
     - Boardy/Attachable
     - Boardy/Core
-  - DadFoundation (0.1.1):
+  - DadFoundation (0.2.0):
     - Boardy
-  - DadSDK (0.1.0):
-    - DadSDK/Core (= 0.1.0)
-  - DadSDK/Auth (0.1.0):
+  - DadSDK (0.2.0):
+    - DadSDK/Core (= 0.2.0)
+  - DadSDK/Auth (0.2.0):
     - DadSDK/Core
-  - DadSDK/Core (0.1.0):
-    - DadFoundation (~> 0.1.0)
+  - DadSDK/Core (0.2.0):
+    - DadFoundation (~> 0.2.0)
 
 DEPENDENCIES:
   - DadSDK (from `../`)
@@ -35,8 +35,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Boardy: d23f977dfe2551015bad0f5aff260326929cd699
-  DadFoundation: baa5b5db446b4e56f54feb0125c9abfa43f49d60
-  DadSDK: c5384e023684f5ba64363c340c8c0689eed5097e
+  DadFoundation: 942b7c71aeb0342d8fd91ce3f2d871af25c33b58
+  DadSDK: b550a7ec3186bfe6684d82d3087a76b8f43433d1
 
 PODFILE CHECKSUM: e147b6127641d9784b0a505885c5f5388e59f52e
 

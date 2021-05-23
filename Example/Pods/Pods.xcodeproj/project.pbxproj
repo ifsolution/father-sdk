@@ -15,13 +15,12 @@
 		14B7847F23F99BDDBCE1AAF15E8167F5 /* Boardy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 259AE966A8B284BDB4633E970C1E185C /* Boardy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		195507F6046F3ECA23D2F6E9DD4F5560 /* Attachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E17C5E9F43463591693F7AE4D28D0E4 /* Attachable.swift */; };
 		20444FD4D40700A55170E73F773DB4E2 /* ActivatableBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D671244796E61E093FFC805E4FD49D1A /* ActivatableBoard.swift */; };
-		207E93C026595B480009CAE0 /* Daddy+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E93BF26595B480009CAE0 /* Daddy+Auth.swift */; };
 		233861E5EC3C1D99AC32169B07C96409 /* Pods-DadSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7133BA0830F0806D89312C801753B26B /* Pods-DadSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2353B6B56CA98F09377DEAA0B168D217 /* BoardInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFE1D523234FBED177F6A8259B0A15 /* BoardInputModel.swift */; };
-		239C54CD270843C75F60C6F5338076A3 /* ModulePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1B968E5410397442967615D0C08CD /* ModulePlugin.swift */; };
 		2451A88D4882323584DA020088C1CE7A /* ContinuousBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05607C32EB9E0F5DEE0B5F87ABC593FF /* ContinuousBoard.swift */; };
 		2B7F2E587DE833BD7B1E0EAC5A7D29C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3569E925CC6104A1C092CD2C89FFAF /* Foundation.framework */; };
 		2CD70FE29512002F6F9E744AFE7ADFC9 /* Board+Attachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F33E26A549C97E36D84878050CBD1 /* Board+Attachable.swift */; };
+		41F534A9F6C1F2B8F3FAE610F0FA8A37 /* Daddy+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013D63520D08BD520ED68368D4F481FF /* Daddy+Auth.swift */; };
 		458CECEADCB6271E1495FAB87E44FDFA /* DadSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC4889C8D89C7A6BC2EE8F1119C327F1 /* DadSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48531E882BAEF98EC77004376F3122CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3569E925CC6104A1C092CD2C89FFAF /* Foundation.framework */; };
 		49273E7CC4965F478B1B76A4BB60B359 /* Boardy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CE0A4E96F4C5050E45668062069911 /* Boardy-dummy.m */; };
@@ -31,9 +30,9 @@
 		892BCFA8C9B620802180EA5CFEC5E3CB /* SilentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59AD93DC83ADF6A740EF0FC03FA2B8 /* SilentData.swift */; };
 		8A2A59022B3E0F6166359A37844215A7 /* Motherboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4861273B5AC73068DE9C218774EA9B /* Motherboard.swift */; };
 		9204EFAE3D4E234F8D3DD3D829FC7EF4 /* DadFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1320E99F75E4CABDDFE69119D4462 /* DadFoundation-dummy.m */; };
-		9F0CB117B899035E4A4FEF118F281BDE /* Daddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D3F08ED71D2581CB8CB134C3E74CD /* Daddy.swift */; };
 		A540120371AD68B9EA74D7F55AE093E5 /* MotherboardType+Interact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17948281B21C66339E873DF0CC97AFC3 /* MotherboardType+Interact.swift */; };
 		A6CDEB72510F5D7C6DCFBC371390881D /* InstallableBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9AB809C43F3E4E9D3C79E5030768A /* InstallableBoard.swift */; };
+		B137B3753E7C4B39FE86DF12B3FE7C53 /* DadSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5AEBDEF7F8A748FA2E0E338A5E74BF /* DadSDK-dummy.m */; };
 		B1F798843A77DF027D6E36BB02187D67 /* Pods-DadSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26402EBC4386F3E7B65BFD53B3662912 /* Pods-DadSDK_Example-dummy.m */; };
 		B3581F568B65F00D582E70104B02C15B /* InteractableBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C7F27BBBC1940CDFD646D0C6014FC1 /* InteractableBoard.swift */; };
 		B7C1B6546288F418AAB6322CAE1DE6C9 /* DedicatedBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58856439B529D84BC20966644D9F4F /* DedicatedBoard.swift */; };
@@ -42,11 +41,12 @@
 		BE989A985C40EE3AFA544E53260E49C4 /* Pods-DadSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC65FEC3E6CA955DA32F52631E13AE69 /* Pods-DadSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C13274648D21ACFE6F918F61AB31B4F6 /* MotherboardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A0E6AACF8F67A0A822CA14BE6FC81 /* MotherboardType.swift */; };
 		C22A146A1583FA384FD84415BDAD416A /* BoardOutputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE58BAD878F4B33041B0A994B580969 /* BoardOutputModel.swift */; };
+		CE131DDEA4ECA532050B63CC5A175ECC /* Daddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D3F08ED71D2581CB8CB134C3E74CD /* Daddy.swift */; };
 		D3F4595A2BC68A07A71F9C4FB2BE88D0 /* Board+Motherboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6D2A647808410DF1D30AA8D849550E /* Board+Motherboard.swift */; };
-		DDE2CDC92F92B9B691F1EB4CE5782ADD /* DadSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5AEBDEF7F8A748FA2E0E338A5E74BF /* DadSDK-dummy.m */; };
 		E193AC23AEF62CF63A2E3910F7585C06 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094266921B28D807C4FFE32BD65140E2 /* Board.swift */; };
 		E2AAB9DABA12C015632916C955DCAE74 /* MotherboardType+Activate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A8DDE846FA6C01A5B0827B4D75954D /* MotherboardType+Activate.swift */; };
 		E75D491D07A5428BF256A8E6537B7DA1 /* DadFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D06259BC920F1B13F00EB14ECADF1D47 /* DadFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0141F8BCC33BADA2279259BDC8EB814 /* ModulePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1B968E5410397442967615D0C08CD /* ModulePlugin.swift */; };
 		F3F612CD38EE5449BD3EA9A1E13A14DC /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781646C0A384BCAD6DC47F4593DF3896 /* Flow.swift */; };
 		FCF2EA4524E82EC6794925868A72161E /* ModuleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A391B1BE02C9F79287CBBE0CC38D6 /* ModuleLoader.swift */; };
 		FD9626EC413FD557F6B9B418DD4F4AC0 /* Boardy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59612B4226A560DF2CB2226B8F39B879 /* Boardy.framework */; };
@@ -99,10 +99,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0085ECC1AAE0F49EC20951DB3541EB41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0085ECC1AAE0F49EC20951DB3541EB41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		01106ED9BBBCB60F0F6744E5968C5566 /* Pods-DadSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DadSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		013861007AE84CC0A6141FD95462BBB0 /* Pods-DadSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DadSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		03C0FBD99AC48F44E61AF05CE875439C /* Pods_DadSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DadSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		013D63520D08BD520ED68368D4F481FF /* Daddy+Auth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Daddy+Auth.swift"; path = "DadSDK/Auth/Daddy+Auth.swift"; sourceTree = "<group>"; };
+		03C0FBD99AC48F44E61AF05CE875439C /* Pods_DadSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DadSDK_Example.framework; path = "Pods-DadSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05607C32EB9E0F5DEE0B5F87ABC593FF /* ContinuousBoard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContinuousBoard.swift; path = Boardy/Core/Board/ContinuousBoard.swift; sourceTree = "<group>"; };
 		05B8D244F390DDFC879E708A70C143A5 /* BoardID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoardID.swift; path = Boardy/Core/BoardType/BoardID.swift; sourceTree = "<group>"; };
 		063DE19CB631E33940848698443460EC /* Boardy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Boardy.debug.xcconfig; sourceTree = "<group>"; };
@@ -115,7 +116,6 @@
 		17948281B21C66339E873DF0CC97AFC3 /* MotherboardType+Interact.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotherboardType+Interact.swift"; path = "Boardy/Core/BoardType/MotherboardType+Interact.swift"; sourceTree = "<group>"; };
 		1983E079A45F6AAD6E657A320305791D /* Boardy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Boardy.modulemap; sourceTree = "<group>"; };
 		1BCBCEEE4D9FBAE60782DDB103BEEE49 /* Boardy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Boardy-Info.plist"; sourceTree = "<group>"; };
-		207E93BF26595B480009CAE0 /* Daddy+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Daddy+Auth.swift"; path = "DadSDK/Auth/Daddy+Auth.swift"; sourceTree = "<group>"; };
 		20BED39035F3A4A1F183D9A6329F0421 /* Pods-DadSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DadSDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		259AE966A8B284BDB4633E970C1E185C /* Boardy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Boardy-umbrella.h"; sourceTree = "<group>"; };
 		26402EBC4386F3E7B65BFD53B3662912 /* Pods-DadSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DadSDK_Example-dummy.m"; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		4B5A391B1BE02C9F79287CBBE0CC38D6 /* ModuleLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleLoader.swift; path = DadFoundation/Classes/ModuleLoader.swift; sourceTree = "<group>"; };
 		4C51866BBAED001BD94C866CF294D9E7 /* Boardy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Boardy.release.xcconfig; sourceTree = "<group>"; };
 		59612B4226A560DF2CB2226B8F39B879 /* Boardy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Boardy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D32B4C74581C3AE46C61636EE89EC45 /* DadFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DadFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D32B4C74581C3AE46C61636EE89EC45 /* DadFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DadFoundation.framework; path = DadFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E47D564EBA77653F6B3957DB0444033 /* Pods-DadSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DadSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		63C1B968E5410397442967615D0C08CD /* ModulePlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModulePlugin.swift; path = DadSDK/Core/ModulePlugin.swift; sourceTree = "<group>"; };
 		6496D22244847AAF1ACC0853E1CE211D /* Pods-DadSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DadSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,11 +140,11 @@
 		79D9AB809C43F3E4E9D3C79E5030768A /* InstallableBoard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstallableBoard.swift; path = Boardy/Core/BoardType/InstallableBoard.swift; sourceTree = "<group>"; };
 		87A544D5AB7C9E7DD2CC7C91A631E548 /* DadSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DadSDK.modulemap; sourceTree = "<group>"; };
 		8AFFD97F372C9BC27CEA39549FE3BC24 /* BoardType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoardType.swift; path = Boardy/Core/BoardType/BoardType.swift; sourceTree = "<group>"; };
-		8DECF52EDC06FEDF15E0458A46BCFE82 /* DadSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DadSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8DECF52EDC06FEDF15E0458A46BCFE82 /* DadSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DadSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97C59FAB5FE62DDD4AD45D5460501716 /* DadFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DadFoundation-prefix.pch"; sourceTree = "<group>"; };
 		9AE58BAD878F4B33041B0A994B580969 /* BoardOutputModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoardOutputModel.swift; path = Boardy/Core/BoardType/BoardOutputModel.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1E181900E1C5392E41D84D1DA5149C8 /* DadSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DadSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1E181900E1C5392E41D84D1DA5149C8 /* DadSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DadSDK.framework; path = DadSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A379EC46DDBB22F41396840BB32D9524 /* Pods-DadSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DadSDK_Tests.modulemap"; sourceTree = "<group>"; };
 		A6D3D97B596145D3864C0D196B5BDB0D /* BoardContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoardContainer.swift; path = Boardy/Core/Board/BoardContainer.swift; sourceTree = "<group>"; };
 		A95A0E6AACF8F67A0A822CA14BE6FC81 /* MotherboardType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotherboardType.swift; path = Boardy/Core/BoardType/MotherboardType.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		C68F33E26A549C97E36D84878050CBD1 /* Board+Attachable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Board+Attachable.swift"; path = "Boardy/Attachable/Board+Attachable.swift"; sourceTree = "<group>"; };
 		C6EBEB7540CA656145B30AE341E18209 /* DadSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DadSDK.release.xcconfig; sourceTree = "<group>"; };
 		C8CE0A4E96F4C5050E45668062069911 /* Boardy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Boardy-dummy.m"; sourceTree = "<group>"; };
-		CA6D75D99384C25F313F84F2ECA36951 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CA6D75D99384C25F313F84F2ECA36951 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		CD021759E44BAD290F1D934C79B43433 /* DadSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DadSDK.debug.xcconfig; sourceTree = "<group>"; };
 		D06259BC920F1B13F00EB14ECADF1D47 /* DadFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DadFoundation-umbrella.h"; sourceTree = "<group>"; };
 		D671244796E61E093FFC805E4FD49D1A /* ActivatableBoard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivatableBoard.swift; path = Boardy/Core/BoardType/ActivatableBoard.swift; sourceTree = "<group>"; };
@@ -167,9 +167,9 @@
 		DC6D2A647808410DF1D30AA8D849550E /* Board+Motherboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Board+Motherboard.swift"; path = "Boardy/Core/Board/Board+Motherboard.swift"; sourceTree = "<group>"; };
 		DF58856439B529D84BC20966644D9F4F /* DedicatedBoard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DedicatedBoard.swift; path = Boardy/Core/BoardType/DedicatedBoard.swift; sourceTree = "<group>"; };
 		E09BDF7FA8509185A4C1BF7B76420179 /* DadFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DadFoundation-Info.plist"; sourceTree = "<group>"; };
-		E834C4725881541F73ED54DCD6DBD02E /* Pods_DadSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DadSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E834C4725881541F73ED54DCD6DBD02E /* Pods_DadSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DadSDK_Tests.framework; path = "Pods-DadSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9389AD9745A1E7D0FC7B6C63046A3CE /* Pods-DadSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DadSDK_Tests-Info.plist"; sourceTree = "<group>"; };
-		E981C7A55A8594C5D800C27131D95A53 /* Boardy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Boardy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E981C7A55A8594C5D800C27131D95A53 /* Boardy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Boardy.framework; path = Boardy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5AEBDEF7F8A748FA2E0E338A5E74BF /* DadSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DadSDK-dummy.m"; sourceTree = "<group>"; };
 		EB59AD93DC83ADF6A740EF0FC03FA2B8 /* SilentData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SilentData.swift; path = Boardy/Core/BoardType/SilentData.swift; sourceTree = "<group>"; };
 		ED052A2D5D9163A5FE22A0BB36223384 /* Pods-DadSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DadSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -250,6 +250,14 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		28C5251E2076A9A4EB963FC399959747 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				013D63520D08BD520ED68368D4F481FF /* Daddy+Auth.swift */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
 		2A1605037E25587314689DBCB9E540EC /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +334,7 @@
 				4B5A391B1BE02C9F79287CBBE0CC38D6 /* ModuleLoader.swift */,
 				761E52404DB3538E8F6777D8147997A4 /* Support Files */,
 			);
+			name = DadFoundation;
 			path = DadFoundation;
 			sourceTree = "<group>";
 		};
@@ -347,7 +356,7 @@
 		71A34864C5C9BA0D2B260255D949BFAB /* DadSDK */ = {
 			isa = PBXGroup;
 			children = (
-				CB5F96F0060194986B36A9AD58665144 /* Auth */,
+				28C5251E2076A9A4EB963FC399959747 /* Auth */,
 				2A1605037E25587314689DBCB9E540EC /* Core */,
 				4C36577F2EB997C698594CAC51C2049E /* Pod */,
 				D5823E5CCBB30B27808048637BFB2047 /* Support Files */,
@@ -388,6 +397,7 @@
 				09353D75645F36564778E29D2E11F17B /* DeepLink */,
 				62FADE872738833F5C8FA7397A79812D /* Support Files */,
 			);
+			name = Boardy;
 			path = Boardy;
 			sourceTree = "<group>";
 		};
@@ -398,14 +408,6 @@
 				54D52E2A4B0DA9241E4CB183B152A907 /* DadFoundation */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		CB5F96F0060194986B36A9AD58665144 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				207E93BF26595B480009CAE0 /* Daddy+Auth.swift */,
-			);
-			name = Auth;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -543,7 +545,7 @@
 			buildConfigurationList = A4FFA3534986D7D4FA582DD13792769F /* Build configuration list for PBXNativeTarget "DadSDK" */;
 			buildPhases = (
 				5AD915C413DEE81CA195C151F4702D21 /* Headers */,
-				1DB8187AB3C60B54EBE6A3A0EBD24095 /* Sources */,
+				88AFBC09A0961DF365A956269765FC1A /* Sources */,
 				C3C30DA6B0AC0894540A7A8C56A8B9B2 /* Frameworks */,
 				0CC3E58325846B02196BFFFE816FEAD5 /* Resources */,
 			);
@@ -685,17 +687,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1DB8187AB3C60B54EBE6A3A0EBD24095 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				207E93C026595B480009CAE0 /* Daddy+Auth.swift in Sources */,
-				9F0CB117B899035E4A4FEF118F281BDE /* Daddy.swift in Sources */,
-				DDE2CDC92F92B9B691F1EB4CE5782ADD /* DadSDK-dummy.m in Sources */,
-				239C54CD270843C75F60C6F5338076A3 /* ModulePlugin.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		366BFE2176999854C03CFBDE2874D945 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -710,6 +701,17 @@
 			files = (
 				9204EFAE3D4E234F8D3DD3D829FC7EF4 /* DadFoundation-dummy.m in Sources */,
 				FCF2EA4524E82EC6794925868A72161E /* ModuleLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88AFBC09A0961DF365A956269765FC1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F534A9F6C1F2B8F3FAE610F0FA8A37 /* Daddy+Auth.swift in Sources */,
+				CE131DDEA4ECA532050B63CC5A175ECC /* Daddy.swift in Sources */,
+				B137B3753E7C4B39FE86DF12B3FE7C53 /* DadSDK-dummy.m in Sources */,
+				F0141F8BCC33BADA2279259BDC8EB814 /* ModulePlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1011,7 +1013,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

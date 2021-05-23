@@ -6,8 +6,15 @@
 //  Copyright (c) 2021 NGUYEN CHI CONG. All rights reserved.
 //
 
+import Boardy
 import DadSDK
 import UIKit
+
+extension BoardID {
+    static let some: BoardID = "some"
+    static let some1: BoardID = "some1"
+    static let some2: BoardID = "some2"
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Daddy.with(options: .default).initialize()
+        let authPlugin = AuthPlugin(identifier: .some, some1Destination: .some1, some2Destination: .some2)
+
+        Daddy.with(options: .default)
+            .adopt(plugin: authPlugin) { mainboard in
+                mainboard.registerFlowSteps("111" ->>> "222")
+            }
+            .initialize()
 
         let daddy = Daddy.shared
 

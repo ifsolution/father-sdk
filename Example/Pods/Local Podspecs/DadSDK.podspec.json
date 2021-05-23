@@ -1,6 +1,6 @@
 {
   "name": "DadSDK",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "A short description of DadSDK.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/congncif/father-sdk",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:ifsolution/father-sdk.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "social_media_url": "https://twitter.com/congncif",
   "platforms": {
@@ -30,7 +30,7 @@
       "source_files": "DadSDK/Core/*.swift",
       "dependencies": {
         "DadFoundation": [
-          "~> 0.1.0"
+          "~> 0.2.0"
         ]
       }
     },
