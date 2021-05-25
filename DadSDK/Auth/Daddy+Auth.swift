@@ -65,6 +65,6 @@ public struct AuthPlugin: ModulePlugin {
         let module = SomeModuleLoader(identifier: identifier, exProducer: ExProducer(producer: main.producer, some1: some1, some2: some2)) {
             print("An external factory come here")
         }
-        main.append(module: module)
+        module.load(in: main)
     }
 }

@@ -23,8 +23,6 @@ public final class DaddyComponent {
     private var plugins: [ModulePlugin] = []
     private var flowRegistrations: [(FlowMotherboard) -> Void] = []
 
-    private var modules: [ModuleLoader] = []
-
     public var producer: ActivableBoardProducer { container }
 
     init(options: Options) {
@@ -66,16 +64,6 @@ public final class DaddyComponent {
 extension DaddyComponent: MainComponent {
     public func registerBoard(_ identifier: BoardID, producer: @escaping (BoardID) -> ActivatableBoard) {
         container.register({ producer(identifier) }, forId: identifier)
-    }
-
-    public func append(module: ModuleLoader) {
-        if !modules.contains(where: { $0.identifier == module.identifier }) {
-            modules.append(module)
-        } else {
-            #if DEBUG
-            print("⚠️ Duplicated module \(module.identifier)")
-            #endif
-        }
     }
 }
 
