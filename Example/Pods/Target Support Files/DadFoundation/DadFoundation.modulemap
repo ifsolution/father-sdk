@@ -1,6 +1,0 @@
-framework module DadFoundation {
-  umbrella header "DadFoundation-umbrella.h"
-
-  export *
-  module * { export * }
-}

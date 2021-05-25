@@ -1,6 +1,0 @@
-framework module Pods_DadSDK_Tests {
-  umbrella header "Pods-DadSDK_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
