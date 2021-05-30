@@ -87,8 +87,8 @@ public final class Daddy {
         DaddyComponent(options: options)
     }
 
-    public func launch<Input>(in window: UIWindow, input: BoardInput<Input>) {
-        mainboard.installIntoWindow(window)
+    public func launch<Input>(on rootObject: AnyObject, input: BoardInput<Input>) {
+        mainboard.installIntoRoot(rootObject)
         mainboard.activateBoard(input)
     }
 }
