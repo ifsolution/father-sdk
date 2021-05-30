@@ -21,6 +21,6 @@ TODO: Add long description of the pod here.
   s.subspec "Core" do |co|
     co.source_files = "DadSDK/Core/*.swift"
 
-    co.dependency "DadFoundation", "~> #{s.version.to_s.sub(/.*\\\K\\\.\\\w+/, ".0")}"
+    co.dependency "DadFoundation", "~> #{s.version.to_s.sub(/.*\\\K\\\.\\\w+/, '.0')}"
   end
 end
