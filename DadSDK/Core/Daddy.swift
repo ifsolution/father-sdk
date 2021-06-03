@@ -23,8 +23,6 @@ public final class DaddyComponent {
     private var plugins: [ModulePlugin] = []
     private var flowRegistrations: [(FlowMotherboard) -> Void] = []
 
-    public var producer: ActivableBoardProducer { container }
-
     init(options: Options) {
         self.options = options
     }
@@ -62,9 +60,7 @@ public final class DaddyComponent {
 }
 
 extension DaddyComponent: MainComponent {
-    public func registerBoard(_ identifier: BoardID, producer: @escaping (BoardID) -> ActivatableBoard) {
-        container.register({ producer(identifier) }, forId: identifier)
-    }
+    public var producer: BoardDynamicProducer { container }
 }
 
 public final class Daddy {
