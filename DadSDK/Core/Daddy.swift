@@ -39,8 +39,8 @@ public final class DaddyComponent {
         return false
     }
 
-    public func adopt(plugin: ModulePlugin,
-                      with flowRegistration: @escaping (FlowMotherboard) -> Void = { _ in }) -> Self {
+    public func install(plugin: ModulePlugin,
+                        with flowRegistration: @escaping (FlowMotherboard) -> Void = { _ in }) -> Self {
         if append(plugin: plugin) {
             flowRegistrations.append(flowRegistration)
         }
