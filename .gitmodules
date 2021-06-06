@@ -1,4 +1,0 @@
-[submodule "scripts"]
-	path = scripts
-	url = git@github.com:ifsolution/father-scripts.git
-	branch = main
