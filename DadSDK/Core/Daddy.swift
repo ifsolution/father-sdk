@@ -84,7 +84,19 @@ public final class Daddy {
     }
 
     public func launch<Input>(on rootObject: AnyObject, input: BoardInput<Input>) {
+        launch(on: rootObject) { mainboard in
+            mainboard.activateBoard(input)
+        }
+    }
+
+    public func launch(on rootObject: AnyObject, action: (_ mainboard: FlowMotherboard) -> Void) {
+        #if DEBUG
+        if mainboard.root != nil, mainboard.root !== rootObject {
+            print("⚠️ Motherboard \(mainboard) will change root from \(mainboard.root) to \(rootObject)")
+        }
+        #endif
+
         mainboard.installIntoRoot(rootObject)
-        mainboard.activateBoard(input)
+        action(mainboard)
     }
 }
