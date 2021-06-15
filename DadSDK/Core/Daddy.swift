@@ -39,6 +39,13 @@ public final class DaddyComponent {
         return false
     }
 
+    public func install(plugins: [ModulePlugin]) -> Self {
+        for plugin in plugins {
+            _ = append(plugin: plugin)
+        }
+        return self
+    }
+
     public func install(plugin: ModulePlugin,
                         with flowRegistration: @escaping (FlowMotherboard) -> Void = { _ in }) -> Self {
         if append(plugin: plugin) {
