@@ -18,7 +18,7 @@ public struct Options {
 public final class DaddyComponent {
     private let options: Options
 
-    private var container = BoardContainer()
+    private var container = BoardProducer(registrations: [])
 
     private var plugins: [ModulePlugin] = []
     private var flowRegistrations: [(FlowMotherboard) -> Void] = []
