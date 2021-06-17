@@ -9,21 +9,15 @@ import Boardy
 import DadFoundation
 import Foundation
 
-public struct Options {
-    public init() {}
-
-    public static let `default` = Options()
-}
-
 public final class DaddyComponent {
-    private let options: Options
+    public let options: MainOptions
 
     private var container = BoardProducer(registrations: [])
 
     private var plugins: [ModulePlugin] = []
     private var flowRegistrations: [(FlowMotherboard) -> Void] = []
 
-    init(options: Options) {
+    init(options: MainOptions) {
         self.options = options
     }
 
@@ -86,7 +80,7 @@ public final class Daddy {
         return instance
     }
 
-    public static func with(options: Options) -> DaddyComponent {
+    public static func with(options: MainOptions) -> DaddyComponent {
         DaddyComponent(options: options)
     }
 
