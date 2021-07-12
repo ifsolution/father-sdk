@@ -1,15 +1,21 @@
 # DadSDK
 
-[![CI Status](https://img.shields.io/travis/NGUYEN CHI CONG/DadSDK.svg?style=flat)](https://travis-ci.org/NGUYEN CHI CONG/DadSDK)
-[![Version](https://img.shields.io/cocoapods/v/DadSDK.svg?style=flat)](https://cocoapods.org/pods/DadSDK)
-[![License](https://img.shields.io/cocoapods/l/DadSDK.svg?style=flat)](https://cocoapods.org/pods/DadSDK)
-[![Platform](https://img.shields.io/cocoapods/p/DadSDK.svg?style=flat)](https://cocoapods.org/pods/DadSDK)
+`DadSDK` is an **IntegrationSDK** which will install all module plugins, provide *shared options* (env) for feature modules.
+
+A feature module will be activated from `DadSDK` via *identifier* and input.
+
+<img src="https://i.imgur.com/cckqFgz.jpg"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
++ iOS 10+
++ Swift 5.4
 
 ## Installation
 

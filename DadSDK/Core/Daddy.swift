@@ -100,4 +100,12 @@ public final class Daddy {
         mainboard.installIntoRoot(rootObject)
         action(mainboard)
     }
+
+    public func activateNow(_ action: (_ mainboard: FlowMotherboard) -> Void) {
+        guard mainboard.root != nil else {
+            assertionFailure("🚧 Motherboard \(mainboard) was not installed. DadSDK must be launched before activating modules.")
+            return
+        }
+        action(mainboard)
+    }
 }

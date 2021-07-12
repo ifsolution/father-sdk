@@ -8,6 +8,8 @@
 import DadFoundation
 import Foundation
 
+#if swift(>=5.4)
+
 extension Array: ModulePluginConvertible where Element == ModulePlugin {
     public var plugins: [ModulePlugin] {
         return self
@@ -46,3 +48,5 @@ extension DaddyComponent {
         self.install(plugins: pluginsBuilder())
     }
 }
+
+#endif

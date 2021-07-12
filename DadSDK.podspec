@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "DadSDK"
-  s.version = "0.6.0"
+  s.version = "1.0.0"
   s.summary = "A short description of DadSDK."
 
   s.description = <<-DESC
@@ -10,7 +10,7 @@ TODO: Add long description of the pod here.
   s.homepage = "https://github.com/congncif/father-sdk"
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.author = { "NGUYEN CHI CONG" => "congnc.if@gmail.com" }
-  s.source = { :git => "git@github.com:ifsolution/father-sdk.git", :tag => s.version.to_s }
+  s.source = { :git => "https://github.com/ifsolution/father-sdk.git", :tag => s.version.to_s }
   s.social_media_url = "https://twitter.com/congncif"
 
   s.ios.deployment_target = "10.0"
